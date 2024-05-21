@@ -22,6 +22,7 @@ export const Primercomponente = () => {
         background: colorBgContainer,
         backgroundColor: '#ffffff',
         borderRadius: borderRadiusLG,
+        //display: 'flex',
     }
     
       
@@ -80,12 +81,11 @@ export const Primercomponente = () => {
 
         <Content style={contentStyle} >
             <Row gutter={24} justify={'space-around'} style={categoria} align={'center'}>
-                <Col span={4} ><h2>Nombre Del proyecto</h2></Col>
+                <Col span={4} ><h2>Proyecto</h2></Col>
                 <Col span={4} ><h2>Cliente</h2></Col>
                 <Col span={4} ><h2>Ubicación</h2></Col>
                 <Col span={4} ><h2>Estado</h2></Col>
-                <Col span={4} ><h2>Actualizado</h2></Col>
-                <Col span={4} ><h2>Fecha de finalizacion</h2></Col>
+                <Col span={3}></Col>
             </Row>
             {proyectosMostrados.map((proy) => <ProyectList proyect={proy} key={proy.id} />)}
         
