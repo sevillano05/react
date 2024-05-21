@@ -66,7 +66,7 @@ export const Primercomponente = () => {
     }
         
 
-    console.log(proyectosMostrados)
+    //console.log(proyectosMostrados)
 
     
 
