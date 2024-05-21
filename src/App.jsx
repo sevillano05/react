@@ -1,17 +1,17 @@
 import './App.css';
-
 import { Primercomponente } from './components/Primercomponente';
+import { Layout} from 'antd';
 
 function App() {
-  
 
+  
   return (
-    <div className="App">
+    <Layout className='App layoutStyle'>
       
       <Primercomponente />
      
       
-    </div>
+    </Layout>
   );
 }
 

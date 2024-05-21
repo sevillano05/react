@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+/*primer componente*/
+
+.layoutStyle {
+  border-radius: 8;
+  overflow: 'auto';
+  width: 100%;
+  align-items: center;
+}
+
