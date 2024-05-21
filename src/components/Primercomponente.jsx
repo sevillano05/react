@@ -4,6 +4,7 @@ import { Row, Col, Layout, theme, Space, Input} from 'antd'
 import { collection, getDocs } from 'firebase/firestore'
 import {db} from '../firebase/config'
 import { ProyectList } from './ProyectList'
+import{AddProject} from './Form'
 
 
 
@@ -75,6 +76,7 @@ export const Primercomponente = () => {
         <div>
             <Space size= {450} wrap>
                 <h2 >CRUD Proyectos</h2>
+                <AddProject></AddProject>
                 <Input  placeholder="Nombre del proyecto" onChange={handleBuscar}/>
             </Space>
         </div>
