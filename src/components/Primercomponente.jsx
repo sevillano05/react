@@ -88,6 +88,8 @@ export const Primercomponente = () => {
                 <Col span={4} ><h2>Ubicación</h2></Col>
                 <Col span={4} ><h2>Estado</h2></Col>
                 <Col span={3}></Col>
+                <Col span={3}></Col>
+                
             </Row>
             {proyectosMostrados.map((proy) => <ProyectList proyect={proy} key={proy.id} />)}
         

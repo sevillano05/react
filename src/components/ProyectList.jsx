@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col, Divider, Typography, Space} from 'antd'
 import {LoadingOutlined, CheckCircleTwoTone, FireTwoTone} from '@ant-design/icons'
 import { Borrar } from './Borrar';
+import { EditProject } from './editForm';
 
 
 
@@ -55,6 +56,8 @@ export const ProyectList = ({proyect}) => {
             <Col span={4} ><h3>{proyect.ubicacion}</h3></Col>
             <Col span={4} >{chooseIcon(proyect.estado)} </Col>
             <Col span={2}><Borrar id={proyect.id}/></Col>
+            <Col span={2}><EditProject proyect={proyect} id={proyect.id}/></Col>
+
             
         </Row>
         
