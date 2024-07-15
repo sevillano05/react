@@ -1,9 +1,8 @@
 FROM node:20
 
-ENV PORT=3000
-
 WORKDIR /App.jsx
-COPY . /package*.json ./
+COPY package*.json ./
+RUN npm install
 COPY . .
 RUN npm run build
 
