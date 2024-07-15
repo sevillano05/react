@@ -74,7 +74,7 @@ export const Primercomponente = () => {
   return (
     <div>
         <div>
-            <Space size= {450} wrap>
+            <Space size= {350} wrap>
                 <h2 >CRUD Proyectos</h2>
                 <AddProject></AddProject>
                 <Input  placeholder="Nombre del proyecto" onChange={handleBuscar}/>
@@ -87,8 +87,8 @@ export const Primercomponente = () => {
                 <Col span={4} ><h2>Cliente</h2></Col>
                 <Col span={4} ><h2>Ubicación</h2></Col>
                 <Col span={4} ><h2>Estado</h2></Col>
-                <Col span={3}></Col>
-                <Col span={3}></Col>
+                <Col span={2}></Col>
+                <Col span={2}></Col>
                 
             </Row>
             {proyectosMostrados.map((proy) => <ProyectList proyect={proy} key={proy.id} />)}
